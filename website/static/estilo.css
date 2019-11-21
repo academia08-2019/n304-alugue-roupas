@@ -8,3 +8,18 @@ body{
 img{
     width: 100%;
 }
+
+nav{
+    align-items: center;
+    background-color: antiquewhite;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+
+}
+
+nav a{
+    color: indigo;
+    font-size: 14pt;
+    text-decoration: none;
+}
