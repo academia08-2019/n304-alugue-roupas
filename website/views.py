@@ -19,3 +19,6 @@ def home(request):
     }
     
     return render(request, 'home.html', context)
+
+def produtos(request):
+    return render(request, 'produtos.html')
