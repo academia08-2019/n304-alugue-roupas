@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Faça o seu pedido</h1>
+    <form method="POST">
+        {{formulario}}
+        <button>Enviar Pedido</button>
+    </form>
+{% endblock %}
