@@ -2,5 +2,12 @@
 {% load static %}
 
 {% block content %}
- <h1>PRODUTO</h1>
+ <h1>PRODUTOS</h1>
+
+ {% for produto in produtos %}
+  <div>
+    <p>{{produto.nome}}</p>
+    <p>{{produto.preco}}</p>
+  </div>  
+ {% endfor %}
 {% endblock %}
