@@ -26,10 +26,12 @@ def produtos(request):
 
 def cadastro_pedido(request):
     form = PedidoForm(request.POST or None)
-    print(form)
     if form.is_valid():
         form.save()
-        print("if")
+        context = {
+            'msg': "Pedido realizado com sucesso"
+        }
+        return render(request, 'pedido.html', context)
     context = {
         'formulario':form
     }
