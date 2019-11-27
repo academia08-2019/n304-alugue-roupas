@@ -6,6 +6,7 @@
 
  {% for produto in produtos %}
   <div>
+    <img src="../{{ produto.imagem.url  }}" alt="" class="produto-imagem">
     <p>{{produto.nome}}</p>
     <p>{{produto.preco}}</p>
   </div>  
